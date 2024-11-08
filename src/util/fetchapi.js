@@ -1,9 +1,12 @@
+const REACT_APP_API_KEY='26d7a94801b35990d2dd98e96fe30022'
+const REACT_APP_API_LINK='https://api.openweathermap.org/data/2.5'
+
 export const fetchApi = async (value) => {
-    try {
+    try {debugger;
         if (!value) {
             throw new Error('City name cannot be empty');
         }
-        const url = `${process.env.REACT_APP_API_LINK}&q=${value}&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
+    const url = `${REACT_APP_API_LINK}&q=${value}&units=metric&appid=${REACT_APP_API_KEY}`;
     
         const response = await fetch(url);
 
