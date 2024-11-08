@@ -4,9 +4,9 @@
   "description": "A React-based app providing real-time weather updates and forecasts for cities worldwide",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -32,7 +32,9 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
+    "customize-cra": "^1.0.0",
     "dotenv": "^16.4.5",
+    "react-app-rewired": "^2.2.1",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
